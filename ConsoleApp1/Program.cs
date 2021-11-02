@@ -1,4 +1,6 @@
-﻿namespace ConsoleApp1
+﻿using ConsoleApp1.L1;
+
+namespace ConsoleApp1
 {
     public class Program
     {
