@@ -4,13 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApp1
+namespace ConsoleApp1.Common.Interfaces;
+
+internal interface IGeekBrains
 {
-    internal interface IGeekBrains
-    {
-        void Test();
+    void Test();
 
-        string LessonName { get; }
+    string LessonName { get; }
 
-    }
 }
