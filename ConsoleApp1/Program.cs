@@ -37,21 +37,4 @@ public class Program
             }
         }
     }
-
-    private static void dododo()
-    {
-        var a = new Dictionary<string, object>();
-        a.ExtendyaNeZnau();
-    }
-
-  
-
-
-}
-public static class Exstentions
-{
-    public static void ExtendyaNeZnau(this Dictionary<String, object> imya)
-    {
-        imya["vasu"] = "petya";
-    }
 }

@@ -162,20 +162,20 @@ internal class Lesson2 : IGeekBrains
     {
         var count = 0;
         var before = DateTime.Now;
-        for (int i = 1; i < 1_000_000_000; i++)
+
+        var good = new GoodNumber(10);
+        good.Increment();
+        for (; good.Number < 1_000_000_000; good.Increment())
         {
-            if (IsHorowoeChislo(i))
+            if (good.IsGood())
             {
                 count++;
-            }
-            if(i % 1000000 == 0)
-            {
-                Console.WriteLine($"i - {i}");
             }
         }
 
         var after = DateTime.Now;
         Console.WriteLine($"Времячко - {after - before}");
+  
     }
 
     private bool IsHorowoeChislo(int value)
