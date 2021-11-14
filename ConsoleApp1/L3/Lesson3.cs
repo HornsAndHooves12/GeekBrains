@@ -142,8 +142,66 @@ internal class Lesson3 : IGeekBrains
 
     private void Task3()
     {
+        var f1 = new Fraction(1, 1);
+        var f2 = new Fraction(1, 1);
+        while (true)
+        {
 
+            Console.WriteLine($"Первая дробь {f1}");
+            Console.WriteLine($"Вторая дробь {f2}");
+            Console.WriteLine("Выберите операцию над дробями: ");
+            Console.WriteLine("1. Ввести первую дробь");
+            Console.WriteLine("2. Ввести вторую дробь");
+            Console.WriteLine("3. Сумма");
+            Console.WriteLine("4. Разница");
+            Console.WriteLine("5. произведение");
+            Console.WriteLine("6. деление");
+            Console.WriteLine("0. Выход");
+            var number = int.Parse(Console.ReadLine());
+            switch (number)
+            {
+                case 0:
+                    return;
+                case 1:
+                    EnterFraction("первое", f1);
+                    break;
+                case 2:
+                    EnterFraction("второе", f2);
+                    break;
+                case 3:
+                    Console.WriteLine($"сумма равна {f1 + f2}");
+                    break;
+                case 4:
+                    Console.WriteLine($"разница равна {f1 - f2}");
+                    break;
+                case 5:
+                    Console.WriteLine($"произведение равно {f1 * f2}");
+                    break;
+                case 6:
+                    Console.WriteLine($"частное равно {f1 / f2}");
+                    break;
+            }
 
+            Console.WriteLine("нажмите на энтер что бы пойти дальше");
+            Console.ReadLine();
+            Console.Clear();
+        }
+
+    }
+
+    private void EnterFraction(string name, Fraction fraction)
+    {
+        try
+        {
+            Console.WriteLine($" числитель {name}  дроби: ");
+            fraction.Numerator = int.Parse(Console.ReadLine());
+            Console.WriteLine($" знаменатель {name} дроби: ");
+            fraction.Denomenator = int.Parse(Console.ReadLine());
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
     }
 
 }
