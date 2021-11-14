@@ -163,9 +163,10 @@ internal class Lesson2 : IGeekBrains
         var count = 0;
         var before = DateTime.Now;
 
+        Console.WriteLine($"Времячко - пошло");
         var good = new GoodNumber(10);
         good.Increment();
-        for (; good.Number < 1_000_000_000; good.Increment())
+        for (; good.Number <= 1_000_000_000; good.Increment())
         {
             if (good.IsGood())
             {
@@ -174,8 +175,43 @@ internal class Lesson2 : IGeekBrains
         }
 
         var after = DateTime.Now;
-        Console.WriteLine($"Времячко - {after - before}");
-  
+        Console.WriteLine($"Времячко - {after - before} count = {count}");
+
+
+        count = LoopPacked();
+
+        var after2 = DateTime.Now;
+        Console.WriteLine($"Времячко - {after2 - after} count = {count}");
+
+    }
+    public static int LoopPacked()
+    {
+        var count = 0;
+        var sum = 1;
+        var digits = 1L;
+        var mask = 0b1111L;
+        var ten = 10L;
+        for (int i = 1; i <= 1_000_000_000; i++)
+        {
+            var curMask = mask;
+            var curTen = ten;
+            count += 1 + (-(i % sum) >> 31);
+            for (var j = 1L; j <= (1L << 40); j <<= 4)
+            {
+                digits += j;
+                if ((digits & curMask ^ curTen) != 0)
+                {
+                    sum++;
+                    break;
+                }
+                digits ^= curTen;
+                sum -= 9;
+                curMask <<= 4;
+                curTen <<= 4;
+            }
+        }
+
+        return count;
     }
 
     private bool IsHorowoeChislo(int value)
