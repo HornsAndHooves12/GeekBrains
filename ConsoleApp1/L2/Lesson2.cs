@@ -210,7 +210,7 @@ internal class Lesson2 : IGeekBrains
                 curTen <<= 4;
             }
         }
-
+  
         return count;
     }
 
