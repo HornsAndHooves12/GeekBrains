@@ -156,6 +156,8 @@ internal class Lesson3 : IGeekBrains
             Console.WriteLine("4. Разница");
             Console.WriteLine("5. произведение");
             Console.WriteLine("6. деление");
+            Console.WriteLine("7. десятичное значение 1 дроби");
+            Console.WriteLine("8. десятичное значение 2 дроби");
             Console.WriteLine("0. Выход");
             var number = int.Parse(Console.ReadLine());
             switch (number)
@@ -179,6 +181,12 @@ internal class Lesson3 : IGeekBrains
                     break;
                 case 6:
                     Console.WriteLine($"частное равно {f1 / f2}");
+                    break;
+                case 7:
+                    Console.WriteLine($"частное равно {f1.Decimal }");
+                    break;
+                case 8:
+                    Console.WriteLine($"частное равно {f2.Decimal }");
                     break;
             }
 

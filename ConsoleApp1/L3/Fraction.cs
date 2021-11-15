@@ -37,6 +37,7 @@ internal class Fraction
         Numerator = numerator;
     }
 
+    public double Decimal { get => (double)Numerator / (double)Denomenator; }
 
     private static int Gcd(int a, int b)
     {
