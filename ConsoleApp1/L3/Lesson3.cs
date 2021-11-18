@@ -19,6 +19,8 @@ internal class Lesson3 : IGeekBrains
         tasks = new List<Action>() { Task1, Task2, Task3 };
     }
 
+    public string LessonName => "Lesson 3";
+
     public void Test()
     {
 
