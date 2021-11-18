@@ -7,4 +7,18 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Lesson4ArrayLib\Lesson4ArrayLib.csproj" />
+    <ProjectReference Include="..\TwoDimensialArray\TwoDimensialLib.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="L4\Accounts.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="L4\Numbers.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

@@ -2,6 +2,7 @@
 using ConsoleApp1.L1;
 using ConsoleApp1.L2;
 using ConsoleApp1.L3;
+using ConsoleApp1.L4;
 
 namespace ConsoleApp1;
 
@@ -13,6 +14,7 @@ public class Program
                 new Lesson1(),
                 new Lesson2(),
                 new Lesson3(),
+                new Lesson4(),
             };
         lessonPosition(lessons).Test();
     }

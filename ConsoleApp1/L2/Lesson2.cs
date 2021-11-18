@@ -1,4 +1,5 @@
-﻿using ConsoleApp1.Common.Interfaces;
+﻿using ConsoleApp1.Common;
+using ConsoleApp1.Common.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.L2;
 
+[Lesson("Lesson 2")]
 internal class Lesson2 : IGeekBrains
 {
 
@@ -17,8 +19,6 @@ internal class Lesson2 : IGeekBrains
     {
         tasks = new List<Action>() { Task1, Task2, Task3, Task4, Task5, Task6, Task7 };
     }
-
-    public string LessonName => "Lesson 2";
 
     public void Test()
     {
