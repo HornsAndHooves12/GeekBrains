@@ -1,6 +1,7 @@
 ﻿using ConsoleApp1.Common.Interfaces;
 using ConsoleApp1.L1;
 using ConsoleApp1.L2;
+using ConsoleApp1.L3;
 
 namespace ConsoleApp1;
 
@@ -11,6 +12,7 @@ public class Program
         var lessons = new List<IGeekBrains> {
                 new Lesson1(),
                 new Lesson2(),
+                new Lesson3(),
             };
         lessonPosition(lessons).Test();
     }
