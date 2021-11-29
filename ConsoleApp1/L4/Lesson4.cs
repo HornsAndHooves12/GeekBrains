@@ -27,7 +27,7 @@ internal class Lesson4 : IGeekBrains
         Console.WriteLine("Выберите задачу: ");
         for (int i = 0; i < tasks.Count(); i++)
         {
-            Console.WriteLine($"Task{i + 1}");
+            Console.WriteLine($"Task {i + 1}");
         }
         int taskNumber;
         while (!int.TryParse(Console.ReadLine(), out taskNumber))
