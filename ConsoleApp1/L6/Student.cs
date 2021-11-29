@@ -33,6 +33,11 @@ internal class Student: IComparable<Student>
 
     public int CompareTo(Student? other)
     {
-       return age - other.age;
+       var result = course - other.course;
+        if (result == 0)
+        {
+            return age - other.age;
+        }
+       return result;
     }
 }

@@ -59,12 +59,12 @@ internal class L6Task3
             Console.WriteLine($"{i + 1} имя - {student.firstName} {student.lastName}: возвраст - {student.age}");
         }
 
-     
+        list.Sort();
 
         for (int i = 0; i < list.Count; i++)
         {
             Student student = list[i];
-            Console.WriteLine($"{i + 1} имя - {student.firstName} {student.lastName}: возвраст - {student.age}: курс - {student.course}");
+            Console.WriteLine($"{i + 1} имя - {student.firstName} {student.lastName}: курс - {student.course}: возвраст - {student.age}");
         }
         Console.WriteLine(DateTime.Now - dt);
         Console.ReadKey();
