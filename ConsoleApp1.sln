@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31815.197
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{2C9C517A-53F8-4E8B-B77D-F5CBA46EA15A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp1", "ConsoleApp1\ConsoleApp1.csproj", "{2C9C517A-53F8-4E8B-B77D-F5CBA46EA15A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson4ArrayLib", "Lesson4ArrayLib\Lesson4ArrayLib.csproj", "{79013E20-503C-4DE8-B13B-2BE4A332F0F1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TwoDimensialLib", "TwoDimensialArray\TwoDimensialLib.csproj", "{D6B9F828-7847-4FEE-9DD3-7FD5D1DD8AEC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{2C9C517A-53F8-4E8B-B77D-F5CBA46EA15A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C9C517A-53F8-4E8B-B77D-F5CBA46EA15A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C9C517A-53F8-4E8B-B77D-F5CBA46EA15A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{79013E20-503C-4DE8-B13B-2BE4A332F0F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{79013E20-503C-4DE8-B13B-2BE4A332F0F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{79013E20-503C-4DE8-B13B-2BE4A332F0F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{79013E20-503C-4DE8-B13B-2BE4A332F0F1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6B9F828-7847-4FEE-9DD3-7FD5D1DD8AEC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6B9F828-7847-4FEE-9DD3-7FD5D1DD8AEC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6B9F828-7847-4FEE-9DD3-7FD5D1DD8AEC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6B9F828-7847-4FEE-9DD3-7FD5D1DD8AEC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

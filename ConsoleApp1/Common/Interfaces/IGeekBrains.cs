@@ -10,6 +10,6 @@ internal interface IGeekBrains
 {
     void Test();
 
-    string LessonName { get; }
+    string LessonName { get => (GetType().GetCustomAttributes(typeof(LessonAttribute), true).FirstOrDefault() as LessonAttribute)?.Name ?? GetType().Name; }
 
 }

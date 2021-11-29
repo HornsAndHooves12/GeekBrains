@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.L1;
 
+[Lesson("Lesson 1")]
 internal class Lesson1 : IGeekBrains
 {
 
@@ -17,9 +18,6 @@ internal class Lesson1 : IGeekBrains
     {
         tasks = new List<Action>() { Task1, Task2, Task3, Task4, Task5, Task6 };
     }
-
-    public string LessonName => "Lesson 1";
-
 
     public void Test()
     {
