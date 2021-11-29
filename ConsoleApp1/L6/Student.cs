@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1.L6;
 
-internal class Student
+internal class Student: IComparable<Student>
 {
     public string lastName;
     public string firstName;
@@ -31,5 +31,8 @@ internal class Student
         this.city = city;
     }
 
-
+    public int CompareTo(Student? other)
+    {
+       return age - other.age;
+    }
 }
